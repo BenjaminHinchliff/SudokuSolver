@@ -10,7 +10,7 @@ set(SRC
 	"SudokuFrame.cpp"
 	"SudokuBoard.cpp")
 
-add_executable(${TARGT} WIN32 "${SRC}" "${HEADERS}")
+add_executable(${TARGT} "${SRC}" "${HEADERS}")
 
 # goddammit. I wanted to avoid this
 SET(wxWidgets_ROOT_DIR "$ENV{WXWIN}")
