@@ -1,4 +1,4 @@
-set(TARGT "${PROJECT_NAME}Run")
+set(TARGT "SudokuSolver")
 
 set(HEADERS
 	"SudokuApp.h"
@@ -12,7 +12,6 @@ set(SRC
 
 add_executable(${TARGT} "${SRC}" "${HEADERS}")
 
-# goddammit. I wanted to avoid this
 SET(wxWidgets_ROOT_DIR "$ENV{WXWIN}")
 find_package(wxWidgets REQUIRED core base)
 include(${wxWidgets_USE_FILE})
