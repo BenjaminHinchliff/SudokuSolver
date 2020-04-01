@@ -57,9 +57,9 @@ bool SudokuBoard::canInsertAt(int row, int col, int number) const
 
 bool SudokuBoard::findUnassignedLocation(int& row, int& col)
 {
-	for (row = 0; row < board.size(); ++row)
+	for (row = 0; row < static_cast<int>(board.size()); ++row)
 	{
-		for (col = 0; col < board[row].size(); ++col)
+		for (col = 0; col < static_cast<int>(board[row].size()); ++col)
 		{
 			if (board[row][col] == 0)
 			{

@@ -10,8 +10,7 @@ set(SRC
 	"SudokuFrame.cpp"
 	"SudokuBoard.cpp")
 
-add_executable(${TARGT} "${SRC}" "${HEADERS}")
-
+add_executable(${TARGT} WIN32 "${SRC}" "${HEADERS}")
 SET(wxWidgets_ROOT_DIR "$ENV{WXWIN}")
 find_package(wxWidgets REQUIRED core base)
 include(${wxWidgets_USE_FILE})
